@@ -8,13 +8,13 @@ import Paste from "../comps/paste";
 
 const Events = () => {
   const isLogged = useSelector((state) => state.auth.isLogged);
-  const [events, setEvents] = useState([]); // State for events
+  const [events, setEvents] = useState([]);
 
   useEffect(() => {
     const fetchEvents = async () => {
       try {
         const response = await axios.get("http://localhost:3000/tpar/getT");
-        setEvents(response.data); // Store data in state
+        setEvents(response.data); 
       } catch (error) {
         console.error("Error fetching events:", error);
       }
@@ -34,7 +34,7 @@ const Events = () => {
               {events.length > 0 ? (
                 events.map((event) => (
                   <Eventcards
-                    key={event._id} // Use _id for unique keys
+                    key={event._id} 
                     ename={event.ename}
                     edescription={event.description}
                     edate={event.date}
