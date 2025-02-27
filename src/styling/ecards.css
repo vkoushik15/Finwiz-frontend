@@ -1,0 +1,91 @@
+/* Event Card Container */
+.eventcards {
+  display: flex;
+  justify-content: center;
+}
+
+/* Individual Event Card */
+.eventcard {
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eventcard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.eventcard h2 {
+  font-size: 1.6rem;
+  color: #f11d1d; /* Blue color for headings */
+  margin-bottom: 12px;
+}
+
+.eventcard p {
+  font-size: 1rem;
+  color: #333;
+  margin: 8px 0;
+}
+
+.eventcard a {
+  color: #ff6b6b; /* Red link color */
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+
+.eventcard a:hover {
+  text-decoration: underline;
+}
+
+.team-registration {
+  margin: 15px 0;
+}
+
+.team-registration label {
+  display: block;
+  margin: 10px 0;
+}
+
+.team-registration input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.eventcard button {
+  margin-top: 15px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #fc2525; /* Blue color for buttons */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.eventcard button:hover {
+  background: #1a5bbf; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.eventcard button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .eventcard {
+    width: 280px; /* Slightly smaller for mobile */
+  }
+}

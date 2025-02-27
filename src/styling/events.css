@@ -1,0 +1,48 @@
+/* General Styles */
+.events-page1 {
+    background: #d32f2f; /* Red background */
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .events-page1 h1 {
+    font-size: 2.5rem;
+    color: white; /* White text for contrast */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .event-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    background-color: #d32f2f;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .events-page1 h1 {
+      font-size: 2rem;
+    }
+  
+    .event-container {
+      flex-direction: row; /* Keep cards side by side */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      justify-content: flex-start; /* Align cards to the start */
+      padding-bottom: 20px; /* Add space for scrollbar */
+    }
+  
+    .eventcards {
+      flex: 0 0 auto; /* Prevent flex shrinking */
+    }
+  }
