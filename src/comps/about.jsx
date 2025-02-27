@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styling/about.css';
-import Club from '../images/clubphoto.png'; // Ensure this path is correct
+import Club from '../images/clubphoto.png';
 
 const About = () => {
   return (
