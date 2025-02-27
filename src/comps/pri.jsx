@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styling/pri.css'; // External CSS file
+import '../styling/pri.css'; 
 
 const Pri = () => {
   return (
