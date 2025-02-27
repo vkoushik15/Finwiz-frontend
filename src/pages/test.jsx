@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styling/test.css'; // External CSS file
+import '../styling/test.css';
 import zerodhaimage from '../clubimages/zerimage.jpg'
 import quizimage from '../clubimages/quimage.jpg'
 import supplyimage from '../clubimages/simage.jpg'
@@ -8,7 +8,7 @@ import wtrimage from '../clubimages/wtr.jpg'
 const Test = () => {
   return (
     <div className="cards-container">
-      {/* Card 1: Zerodha Quiz */}
+      
       <div className="card">
         <div className="card-image">
           <img src={zerodhaimage} alt="Zerodha Quiz" />
@@ -19,7 +19,7 @@ const Test = () => {
         </div>
       </div>
 
-      {/* Card 2: Finance Talk Show */}
+     
       <div className="card">
         <div className="card-image">
           <img src={quizimage} alt="Finance Talk Show" />
@@ -30,7 +30,7 @@ const Test = () => {
         </div>
       </div>
 
-      {/* Card 3: Warangal Trading Ring */}
+     
       <div className="card">
         <div className="card-image">
           <img src={wtrimage} alt="Warangal Trading Ring" />
@@ -38,7 +38,7 @@ const Test = () => {
         <div className="card-content">
           <h2>Warangal Trading Ring</h2>
           <p>
-            {/* Add description manually */}
+           
           </p>
         </div>
       </div>
