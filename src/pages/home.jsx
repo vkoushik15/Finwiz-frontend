@@ -17,10 +17,10 @@ const Home = () => {
       <h1 style={{color:"black"}}>Excited to be a part of us .watch out the events here</h1>
       <div style={{ 
   display: "flex", 
-  justifyContent: "center",  // Centers horizontally
-  alignItems: "center",  // Centers vertically
+  justifyContent: "center",  
+  alignItems: "center",  
 
-  width: "100%",  // Full width to allow centering
+  width: "100%",  
 }}>
   <NavLink 
     to="/events" 
